@@ -190,6 +190,38 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  # remove news
+  - _news/*
+  - _includes/news.liquid
+  # remove projects
+  - _projects/*
+  - _pages/projects.md
+  # remove dropdown
+  - _pages/dropdown.md
+  # remove papers
+  - _bibliography/papers.bib
+  - _pages/publications.md
+  # remove repositories
+  - _pages/repositories.md
+  - _includes/repository/*
+  # remove cv
+  - _pages/cv.md
+  # remove teaching
+  - _pages/teaching.md
+  # remove people
+  - _pages/profiles.md
+  # remove sample posts
+  - _posts/201*
+  - _posts/2020*
+  - _posts/2021*
+  - _posts/2022*
+  - _posts/2023*
+  - _posts/2024*
+  - _posts/2025-03*
+  # remove books
+  - _books/*
+  # remove assets
+  - assets/jupyter/blog.ipynb
 keep_files:
   - CNAME
   - .nojekyll
@@ -640,37 +672,3 @@ jsonresume:
   - languages
   - interests
   - references
-
-exclude:
-  # remove news
-  - _news/*
-  - _includes/news.liquid
-  # remove projects
-  - _projects/*
-  - _pages/projects.md
-  # remove dropdown
-  - _pages/dropdown.md
-  # remove papers
-  - _bibliography/papers.bib
-  - _pages/publications.md
-  # remove repositories
-  - _pages/repositories.md
-  - _includes/repository/*
-  # remove cv
-  - _pages/cv.md
-  # remove teaching
-  - _pages/teaching.md
-  # remove people
-  - _pages/profiles.md
-  # remove sample posts
-  - _posts/201*
-  - _posts/2020*
-  - _posts/2021*
-  - _posts/2022*
-  - _posts/2023*
-  - _posts/2024*
-  - _posts/2025-03*
-  # remove books
-  - _books/*
-  # remove assets
-  - assets/jupyter/blog.ipynb

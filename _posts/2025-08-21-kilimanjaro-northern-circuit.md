@@ -38,62 +38,69 @@ map: true
     {% leaflet_geojson "/assets/json/kilimanjaro.geojson" %}
 {% endleaflet_map %} 
 
-## Day 1 - Lemosho Gate to Mti Mkubwa
+## Day 1 - Lemosho Gate (2100m) to Mti Mkubwa
 {% for image in site.static_files %}
     {% if image.path contains 'img/kilimanjaro/northern_circuit/1' and image.path contains '.jpeg' %}
         {% include figure.liquid loading="eager" path=image.path class="img-fluid rounded z-depth-1" zoomable=true %}
     {% endif %}
 {% endfor %}
 
-## Day 2 - Mti Mkubwa to Shira I Camp
+## Day 2 - Mti Mkubwa (2650m) to Shira I Camp
 {% for image in site.static_files %}
     {% if image.path contains 'img/kilimanjaro/northern_circuit/2' and image.path contains '.jpeg' %}
         {% include figure.liquid loading="eager" path=image.path class="img-fluid rounded z-depth-1" zoomable=true %}
     {% endif %}
 {% endfor %}
 
-## Day 3 - Shira I Camp to Moir Hut
+## Day 3 - Shira I Camp (3610m) to Moir Hut
 {% for image in site.static_files %}
     {% if image.path contains 'img/kilimanjaro/northern_circuit/3' and image.path contains '.jpeg' %}
         {% include figure.liquid loading="eager" path=image.path class="img-fluid rounded z-depth-1" zoomable=true %}
     {% endif %}
 {% endfor %}
 
-## Day 4 - Moir Hut to Buffalo Camp
+## Day 4 - Moir Hut (4161m) to Buffalo Camp
 {% for image in site.static_files %}
     {% if image.path contains 'img/kilimanjaro/northern_circuit/4' and image.path contains '.jpeg' %}
         {% include figure.liquid loading="eager" path=image.path class="img-fluid rounded z-depth-1" zoomable=true %}
     {% endif %}
 {% endfor %}
 
-## Day 5 - Buffalo Camp to Third Cave
+## Day 5 - Buffalo Camp (4020m) to Third Cave
 {% for image in site.static_files %}
     {% if image.path contains 'img/kilimanjaro/northern_circuit/5' and image.path contains '.jpeg' %}
         {% include figure.liquid loading="eager" path=image.path class="img-fluid rounded z-depth-1" zoomable=true %}
     {% endif %}
 {% endfor %}
 
-## Day 6 - Third Cave to Kibo Hut
+## Day 6 - Third Cave (3800m) to Kibo Hut
 {% for image in site.static_files %}
     {% if image.path contains 'img/kilimanjaro/northern_circuit/6' and image.path contains '.jpeg' %}
         {% include figure.liquid loading="eager" path=image.path class="img-fluid rounded z-depth-1" zoomable=true %}
     {% endif %}
 {% endfor %}
 
-## Day 7 - Kibo Hut to Uhuru Peak to Barafu Camp
+## Day 7 - The Summit from Kibo Hut (4720m) 
 {% for image in site.static_files %}
     {% if image.path contains 'img/kilimanjaro/northern_circuit/7' and image.path contains '.jpeg' %}
         {% include figure.liquid loading="eager" path=image.path class="img-fluid rounded z-depth-1" zoomable=true %}
     {% endif %}
 {% endfor %}
 
-## Day 8 - Barafu Camp to Mweka Camp
+## The Summit - Gilman's Point (5681m) to Uhuru Peak (5895m) 
+{% for image in site.static_files %}
+    {% if image.path contains 'img/kilimanjaro/northern_circuit/summit' and image.path contains '.jpeg' %}
+        {% include figure.liquid loading="eager" path=image.path class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% endif %}
+{% endfor %}
+
+## Day 8 - Barafu Camp (4673m) to Mweka Camp
 {% for image in site.static_files %}
     {% if image.path contains 'img/kilimanjaro/northern_circuit/8' and image.path contains '.jpeg' %}
         {% include figure.liquid loading="eager" path=image.path class="img-fluid rounded z-depth-1" zoomable=true %}
     {% endif %}
 {% endfor %}
 
-## Day 9 - Mweka Camp to Mweka Gate
+## Day 9 - Mweka Camp (3100m) to Mweka Gate
 
 Phone died, so unfortunately no photos! 

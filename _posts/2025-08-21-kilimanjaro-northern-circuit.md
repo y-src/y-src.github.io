@@ -5,7 +5,7 @@ date: 2025-08-22
 description: The roof of Africa, this shows photos taken on the Northern Circuit route.
 tags: kilimanjaro mountain
 categories: mountaineering
-thumbnail: assets/img/kilimanjaro/northern_circuit/8/0.jpeg
+thumbnail: assets/img/kilimanjaro/northern_circuit/8/00.jpeg
 toc:
     sidebar: left
 img_prefix: assets/img/kilimanjaro/northern_circuit

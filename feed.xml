@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://y-src.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://y-src.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-08-22T18:30:32+00:00</updated><id>https://y-src.github.io/feed.xml</id><title type="html">blank</title><entry><title type="html">Mt. Kilimanjaro - The Northern Circuit</title><link href="https://y-src.github.io/blog/2025/kilimanjaro-northern-circuit/" rel="alternate" type="text/html" title="Mt. Kilimanjaro - The Northern Circuit"/><published>2025-08-22T00:00:00+00:00</published><updated>2025-08-22T00:00:00+00:00</updated><id>https://y-src.github.io/blog/2025/kilimanjaro-northern-circuit</id><content type="html" xml:base="https://y-src.github.io/blog/2025/kilimanjaro-northern-circuit/"><![CDATA[<div id="leaflet-map-14f70bded0ac4d27e6194b69fcdc9ddc" class="leaflet-map"></div> <script>(() => {
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://y-src.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://y-src.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-08-22T19:00:07+00:00</updated><id>https://y-src.github.io/feed.xml</id><title type="html">blank</title><entry><title type="html">Mt. Kilimanjaro - The Northern Circuit</title><link href="https://y-src.github.io/blog/2025/kilimanjaro-northern-circuit/" rel="alternate" type="text/html" title="Mt. Kilimanjaro - The Northern Circuit"/><published>2025-08-22T00:00:00+00:00</published><updated>2025-08-22T00:00:00+00:00</updated><id>https://y-src.github.io/blog/2025/kilimanjaro-northern-circuit</id><content type="html" xml:base="https://y-src.github.io/blog/2025/kilimanjaro-northern-circuit/"><![CDATA[<div id="leaflet-map-7717746307ad05bbaafe10b6886928af" class="leaflet-map"></div> <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
     var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
@@ -16,7 +16,7 @@
     
     
     
-    {id: "77345f1c21edc489cc5a215ecd8d8c89",
+    {id: "2b9dec3e12a78a82373c8f31e0f6eeb8",
               type: "LeafletMarker",
               value: { "latitude" : -3.0030444444444444,
                        "longitude" : 37.14695277777778,
@@ -30,7 +30,7 @@
     
     
     
-    {id: "cd32a54d6929fe7021d80da7f1d65308",
+    {id: "5c50fe6440c58359895417227636a67e",
               type: "LeafletMarker",
               value: { "latitude" : -2.9969194444444445,
                        "longitude" : 37.17517777777778,
@@ -44,7 +44,7 @@
     
     
     
-    {id: "743128f6b9b5a34ca385057871812b77",
+    {id: "b3e2c3d306969a6b1f9110e207c5e86b",
               type: "LeafletMarker",
               value: { "latitude" : -3.013088888888889,
                        "longitude" : 37.229194444444445,
@@ -58,7 +58,7 @@
     
     
     
-    {id: "b4c27988764a7da7ca0d4a64e5170f70",
+    {id: "e7a42e11d8f9a0703b7eda43ba5e5b42",
               type: "LeafletMarker",
               value: { "latitude" : -3.0428055555555558,
                        "longitude" : 37.299705555555555,
@@ -72,7 +72,7 @@
     
     
     
-    {id: "d5f974cb55d1e470877fecb79626cbdd",
+    {id: "25e31417dd39f2e0bb26ab8efff6be3d",
               type: "LeafletMarker",
               value: { "latitude" : -3.0200222222222224,
                        "longitude" : 37.36841111111111,
@@ -86,7 +86,7 @@
     
     
     
-    {id: "7ff1956b9f8cee837428d306b2d8dcc3",
+    {id: "c368f3b8e70ea62693cf30cee4e2574e",
               type: "LeafletMarker",
               value: { "latitude" : -3.044563888888889,
                        "longitude" : 37.41070833333333,
@@ -100,7 +100,7 @@
     
     
     
-    {id: "fcdb11b6e73ab7fe2aecf781010a1c82",
+    {id: "181d5fee84fcabd32e17cddd9875fee4",
               type: "LeafletMarker",
               value: { "latitude" : -3.081761111111111,
                        "longitude" : 37.38936944444445,
@@ -114,7 +114,7 @@
     
     
     
-    {id: "e61198cdb38c6a961039dfc28965fd23",
+    {id: "88f8c290aa4189ede231c7e8a1560188",
               type: "LeafletMarker",
               value: { "latitude" : -3.102838888888889,
                        "longitude" : 37.37885555555556,
@@ -123,18 +123,18 @@
     
     
 
-    {id: "fdd79f55ecf608940ca85b7d129990bf",
+    {id: "8b0396fed992aa5ab4b66dd907a777f7",
               type: "LeafletMarker",
               value: { "latitude" : -3.156363833668223,
                        "longitude" : 37.367156881772814,
                        "popupContent" : "Day 9"} },
-    {id: "a1309eec32d0928161a5a54022ab5f51",
+    {id: "08443be664f548057b08a723c79a600b",
               type: "LeafletGeoJSON",
               value: "/assets/json/kilimanjaro.geojson" },
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-14f70bded0ac4d27e6194b69fcdc9ddc";
+    var defaultMapElId = "leaflet-map-7717746307ad05bbaafe10b6886928af";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -267,7 +267,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 14f70bded0ac4d27e6194b69fcdc9ddc with these args:");
+        console.log("Creating map 7717746307ad05bbaafe10b6886928af with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments

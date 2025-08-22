@@ -21,7 +21,8 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-
+    gem 'jekyll-exif-data'
+    gem 'jekyll-leaflet'
     gem 'classifier-reborn'  # used for content categorization during the build
 end
 

@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{
+        },{id: "post-mt-kilimanjaro-the-northern-circuit",
+        
+          title: "Mt. Kilimanjaro - The Northern Circuit",
+        
+        description: "The roof of Africa, this shows photos taken on the Northern Circuit route.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/kilimanjaro-northern-circuit/";
+          
+        },
+      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',

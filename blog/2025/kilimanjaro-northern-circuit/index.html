@@ -1,0 +1,1196 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Mt. Kilimanjaro - The Northern Circuit | Rahul Yadav </title> <meta name="author" content="Rahul Yadav"> <meta name="description" content="The roof of Africa, this shows photos taken on the Northern Circuit route."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link defer href="/assets/css/bootstrap-toc.min.css?6f5af0bb9aab25d79b2448143cbeaa88" rel="stylesheet"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://y-src.github.io/blog/2025/kilimanjaro-northern-circuit/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> <link defer rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Rahul</span> Yadav </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="row"> <div class="col-sm-3"> <nav id="toc-sidebar" class="sticky-top"></nav> </div> <div class="col-sm-9"> <div class="post"> <header class="post-header"> <h1 class="post-title">Mt. Kilimanjaro - The Northern Circuit</h1> <p class="post-meta"> Created on August 22, 2025 </p> <p class="post-tags"> <a href="/blog/2025"> <i class="fa-solid fa-calendar fa-sm"></i> 2025 </a>   ·   <a href="/blog/tag/kilimanjaro"> <i class="fa-solid fa-hashtag fa-sm"></i> kilimanjaro</a>   <a href="/blog/tag/mountain"> <i class="fa-solid fa-hashtag fa-sm"></i> mountain</a>   ·   <a href="/blog/category/mountaineering"> <i class="fa-solid fa-tag fa-sm"></i> mountaineering</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <div id="leaflet-map-66a3d8245d5080958473c7581baeb186" class="leaflet-map"></div> <script>(() => {
+// Specify configuration variables, setup any elements and styling
+    var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
+    var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
+
+    // Get tag input arguments & inside block object list
+    var tagInputArg = { "center" : [-3.0782300575536112,
+            37.3326401936738
+          ], "zoom" : 11,
+                 "providerBasemap": "OpenTopoMap" } ;
+    var blockLeafletItems = [
+    
+    
+    
+    
+    
+    
+    
+    {id: "d12b6fc4d6e3088ab616f317cb214d3e",
+              type: "LeafletMarker",
+              value: { "latitude" : -3.0030444444444444,
+                       "longitude" : 37.14695277777778,
+                       "popupContent" : "Day 1"} },
+                       
+    
+    
+    
+    
+    
+    
+    
+    
+    {id: "b3720a6a155855c23372e6761a855b57",
+              type: "LeafletMarker",
+              value: { "latitude" : -2.9969194444444445,
+                       "longitude" : 37.17517777777778,
+                       "popupContent" : "Day 2"} },
+                       
+    
+    
+    
+    
+    
+    
+    
+    
+    {id: "c9754867557bfa9a063f92fee51025f9",
+              type: "LeafletMarker",
+              value: { "latitude" : -3.013088888888889,
+                       "longitude" : 37.229194444444445,
+                       "popupContent" : "Day 3"} },
+                       
+    
+    
+    
+    
+    
+    
+    
+    
+    {id: "79bbb29cddd0eda20618e9ae155bb65f",
+              type: "LeafletMarker",
+              value: { "latitude" : -3.0428055555555558,
+                       "longitude" : 37.299705555555555,
+                       "popupContent" : "Day 4"} },
+                       
+    
+    
+    
+    
+    
+    
+    
+    
+    {id: "5a0feca39a2623721ea7da0dad2e7b35",
+              type: "LeafletMarker",
+              value: { "latitude" : -3.0200222222222224,
+                       "longitude" : 37.36841111111111,
+                       "popupContent" : "Day 5"} },
+                       
+    
+    
+    
+    
+    
+    
+    
+    
+    {id: "85fed5f400060649ca53fd7affa4c910",
+              type: "LeafletMarker",
+              value: { "latitude" : -3.044563888888889,
+                       "longitude" : 37.41070833333333,
+                       "popupContent" : "Day 6"} },
+                       
+    
+    
+    
+    
+    
+    
+    
+    
+    {id: "4dbe665dd9de62213222a09fec248cac",
+              type: "LeafletMarker",
+              value: { "latitude" : -3.081761111111111,
+                       "longitude" : 37.38936944444445,
+                       "popupContent" : "Day 7"} },
+                       
+    
+    
+    
+    
+    
+    
+    
+    
+    {id: "953f726dddba2331bb197328cd5a6d71",
+              type: "LeafletMarker",
+              value: { "latitude" : -3.102838888888889,
+                       "longitude" : 37.37885555555556,
+                       "popupContent" : "Day 8"} },
+                       
+    
+    
+
+    {id: "3690453f33fab421603e9f21083d9c6f",
+              type: "LeafletMarker",
+              value: { "latitude" : -3.156363833668223,
+                       "longitude" : 37.367156881772814,
+                       "popupContent" : "Day 9"} },
+    {id: "a1176aefdb6843652dab4eab154bf39c",
+              type: "LeafletGeoJSON",
+              value: "/assets/json/kilimanjaro.geojson" },
+];
+
+    // Override the map div id if specified, apply default CSS
+    var defaultMapElId = "leaflet-map-66a3d8245d5080958473c7581baeb186";
+   var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
+    var mapEl = document.getElementById(defaultMapElId);
+    if('divId' in tagInputArg){
+        mapEl.id = tagInputArg['divId'];
+    }
+    var defaultMapCssEl = document.createElement("style");
+    defaultMapCssEl.innerHTML = 
+        "#" + defaultMapElId + "{" + defaultMapElStyle + "}";
+    document.head.appendChild(defaultMapCssEl);
+
+    var newWindowImgSrcBase64 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH4wUVFzAHq2j99AAAAV9JREFUSMdjYKAxYCRHk5ubG9+1a9fm/v//H6cadnb2G/fu3atlIceC379/c3z9+jUEn5q/f/8eYWBgYECxQE5OroqA2Y8ePXq0hJWV9Qc3N/caZB8wMjJKff361QpvEAkKCv4nYMGh9+/f26MLamhoyLx9+3b/nz9/VJCC6MiLFy9sWXCE3xlGRsZvWKQu4DOciYnpCzc396HPnz97weRxWRD/8OHDa4TiAt1wfn5+z79//zoxMDDALWAiN/lhM/zevXtH0NUx0dJwsiwgxXCccUCJ4dzc3DP+//+/gZ2d/duLFy9Is+Djx4+rCbn82rVrrxgYGF6RFUR8fHyZbGxsD7AZLiEhUSAiIrJSUlIyjOw4uHnz5gVHR0d1bC7/8+eP5d+/f8P+/PmjS1Ekr1ix4hcp6ploXVwPfQuwJlMmJiYBLS0tIVIMev36NRvRFnz48OHohw8fhkYQjQKCAAChiL6Pj/LM2QAAAABJRU5ErkJggg==";
+
+// Actual mapping section; Specify a function to be called later that 
+// assembles the correct JS components based on what the user specified in the 
+// tag input arg, the block section of features, etc. Actually creates the map
+// that is visible on the page
+
+    function _getCenter(){
+        var defaultCenter = [0,0];
+        if("center" in tagInputArg){
+            return tagInputArg.center;
+        } else {
+            return defaultCenter;
+        }
+    }
+
+    function _getZoom(){
+        var defaultZoom = 1;
+        if("zoom" in tagInputArg){
+            return tagInputArg.zoom
+        } else {
+            return defaultZoom;
+        }
+    }
+
+    function _getProviderBasemap(){
+        var defaultProviderBasemap = "OpenStreetMap.Mapnik";
+        if("providerBasemap" in tagInputArg){
+            return tagInputArg.providerBasemap;
+        } else {
+            return defaultProviderBasemap;
+        }
+    }
+
+
+    function _addMarkerToMap(leafletItem, map){
+        var m = leafletItem.value;
+        var result = L.marker([m.latitude, m.longitude]).addTo(map);
+        var potentialPopup = "";
+        if('popupContent' in m){
+                potentialPopup += m.popupContent;}
+        if('href' in m){
+            potentialPopup += '<a href="' + m.href + '">' + 
+                '<img src="' + newWindowImgSrcBase64 + '"></img></a>';}
+        if(potentialPopup){
+            result.bindPopup(potentialPopup);}
+        if(!('center' in tagInputArg)){
+            // If the user didn't specify a center, infer from marker
+            map.panTo(new L.LatLng(m.latitude, m.longitude));
+        }
+    }
+
+    function _onEachFeature(feature, layer){
+        var potentialPopup = ""
+        if(feature.properties && feature.properties.popupContent){
+            potentialPopup += feature.properties.popupContent;
+        }
+        if(feature.properties && feature.properties.href){
+            potentialPopup += 
+                '<a href="' + feature.properties.href + '">' + 
+                    '<img src="' + newWindowImgSrcBase64 + '"></img></a>';}
+        if(potentialPopup){
+            layer.bindPopup(potentialPopup);
+        }
+    }
+
+    function _addGeoJSONToMap(leafletItem, map){
+        if(typeof leafletItem.value === "string"){
+            fetch(leafletItem.value).then((resp) => {
+                return resp.json();
+            }).then((data) => {
+                leafletItem.value = data;
+                _addGeoJSONObjToMap(leafletItem, map);
+            }).catch((err) => {
+                console.log("Encountered err w/ geojson, attempting to fix..");
+                console.log(err);
+                _addGeoJSONObjToMap(leafletItem, map);
+            });
+        } else {
+            _addGeoJSONObjToMap(leafletItem, map);
+        }
+     }
+
+    function _addGeoJSONObjToMap(leafletItem, map){
+         var geojson = L.geoJSON(leafletItem.value, { 
+            onEachFeature: _onEachFeature 
+        });
+        layers = geojson.getLayers();
+        for(var i=0; i<layers.length; i++){
+            try{
+                var geom = layers[i].feature.geometry;
+                if(!('center' in tagInputArg)){
+                    // If the user didn't specify a center, infer from geojson
+                    //console.log("panning to " + geom.coordinates);
+                    map.panTo(new L.LatLng(geom.coordinates[1],
+                                           geom.coordinates[0]));
+                }
+            } catch(e){}
+        }
+       
+        geojson.addTo(map);
+       
+    }
+
+    function _processLeafletItem(leafletItem, map){
+        switch(leafletItem.type){
+            case "LeafletMarker":
+                _addMarkerToMap(leafletItem, map);
+                break;
+            case "LeafletGeoJSON":
+                _addGeoJSONToMap(leafletItem, map);
+                break;
+            case undefined:
+                break; 
+            default:
+                console.log("Couldn't add item " + leafletItem.id);
+                break;
+        }
+    }
+
+//The actual section that is called that creates a map
+    function createMap(){
+        console.log("Creating map 66a3d8245d5080958473c7581baeb186 with these args:");
+        console.log(tagInputArg);
+
+        //Initialize Map with the correct input arguments
+        var map = L.map(mapEl.id, 
+            {worldCopyJump: true}).setView(_getCenter(), _getZoom());
+        L.tileLayer.provider(_getProviderBasemap()).addTo(map);
+        if("esriBasemap" in tagInputArg){
+            L.esri.basemapLayer(tagInputArg.esriBasemap).addTo(map);
+        }
+
+        //process each Leaflet Item passed in between the block tag middle
+        for(var i=0; i<blockLeafletItems.length; i++){
+            var leafletItem = blockLeafletItems[i];
+            console.log("Adding leaflet item " + leafletItem.id + ":");
+            console.log(leafletItem);
+            _processLeafletItem(leafletItem, map);
+        }
+    }
+
+// Load the correct JS libraries/CSS by adding to head: 
+// When ready, call createMap() to create the map on the page
+
+    function _createMap(){
+        // helper function to draw the map only when everything is loaded,
+        // safeguards against multiple calls to window.onload
+        var prevOnLoad;
+        if(window.onload){
+            prevOnLoad = window.onload;
+        }
+        window.onload = () => {
+            createMap();
+            if(prevOnLoad){
+                prevOnLoad();
+            }
+        }
+    }
+
+    var leafletCssId = "leaflet-css-head";
+    var leafletJsId = "leaflet-js-head";
+    var esriLeafletJsId = "esri-leaflet-js-head";
+    var leafletProvidersJsId = "leaflet-providers-js-head";
+
+    // Add the leaflet CSS first, don't worry about when it loads
+    var leafletCssEl = document.createElement("link");
+    leafletCssEl.id = leafletCssId;
+    leafletCssEl.rel = "stylesheet";
+    leafletCssEl.href = leafletCdn + "leaflet.css";
+    if(!document.getElementById(leafletCssEl.id)){
+        document.head.appendChild(leafletCssEl);
+    }
+
+    function addToHeadIfNotLoaded(el) {
+        //Add the el to the head if it doesn't exist already. If it does,
+        //everything we need is already loaded, so draw the map
+        if(!document.getElementById(el.id)){
+            document.head.appendChild(el);
+        } else {
+            _createMap();
+        }
+    }
+
+    // Load the main leaflet.js code, wait for it to load
+    var leafletJsEl = document.createElement("script");
+    leafletJsEl.id = leafletJsId;
+    leafletJsEl.onload = () => {
+        //After loaded, load the esri-leaflet.js code, wait for it to load
+        var esriEl = document.createElement("script");
+        esriEl.id = esriLeafletJsId;
+        esriEl.onload = () => {
+            //After loaded, add the inline leaflet-providers <script>
+            provEl = document.createElement("script");
+            provEl.id = leafletProvidersJsId;
+            provEl.innerHTML = `//Taken from https://github.com/leaflet-extras/leaflet-providers
+(function (root, factory) {
+	if (typeof define === 'function' && define.amd) {
+		// AMD. Register as an anonymous module.
+		define(['leaflet'], factory);
+	} else if (typeof modules === 'object' && module.exports) {
+		// define a Common JS module that relies on 'leaflet'
+		module.exports = factory(require('leaflet'));
+	} else {
+		// Assume Leaflet is loaded into global object L already
+		factory(L);
+	}
+}(this, function (L) {
+	'use strict';
+
+	L.TileLayer.Provider = L.TileLayer.extend({
+		initialize: function (arg, options) {
+			var providers = L.TileLayer.Provider.providers;
+
+			var parts = arg.split('.');
+
+			var providerName = parts[0];
+			var variantName = parts[1];
+
+			if (!providers[providerName]) {
+				throw 'No such provider (' + providerName + ')';
+			}
+
+			var provider = {
+				url: providers[providerName].url,
+				options: providers[providerName].options
+			};
+
+			// overwrite values in provider from variant.
+			if (variantName && 'variants' in providers[providerName]) {
+				if (!(variantName in providers[providerName].variants)) {
+					throw 'No such variant of ' + providerName + ' (' + variantName + ')';
+				}
+				var variant = providers[providerName].variants[variantName];
+				var variantOptions;
+				if (typeof variant === 'string') {
+					variantOptions = {
+						variant: variant
+					};
+				} else {
+					variantOptions = variant.options;
+				}
+				provider = {
+					url: variant.url || provider.url,
+					options: L.Util.extend({}, provider.options, variantOptions)
+				};
+			}
+
+			// replace attribution placeholders with their values from toplevel provider attribution,
+			// recursively
+			var attributionReplacer = function (attr) {
+				if (attr.indexOf('{attribution.') === -1) {
+					return attr;
+				}
+				return attr.replace(/\{attribution.(\w*)\}/g,
+					function (match, attributionName) {
+						return attributionReplacer(providers[attributionName].options.attribution);
+					}
+				);
+			};
+			provider.options.attribution = attributionReplacer(provider.options.attribution);
+
+			// Compute final options combining provider options with any user overrides
+			var layerOpts = L.Util.extend({}, provider.options, options);
+			L.TileLayer.prototype.initialize.call(this, provider.url, layerOpts);
+		}
+	});
+
+	/**
+	 * Definition of providers.
+	 * see http://leafletjs.com/reference.html#tilelayer for options in the options map.
+	 */
+
+	L.TileLayer.Provider.providers = {
+		OpenStreetMap: {
+			url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 19,
+				attribution:
+					'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			},
+			variants: {
+				Mapnik: {},
+				DE: {
+					url: 'https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',
+					options: {
+						maxZoom: 18
+					}
+				},
+				CH: {
+					url: 'https://tile.osm.ch/switzerland/{z}/{x}/{y}.png',
+					options: {
+						maxZoom: 18,
+						bounds: [[45, 5], [48, 11]]
+					}
+				},
+				France: {
+					url: 'https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',
+					options: {
+						maxZoom: 20,
+						attribution: '&copy; Openstreetmap France | {attribution.OpenStreetMap}'
+					}
+				},
+				HOT: {
+					url: 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+					options: {
+						attribution:
+							'{attribution.OpenStreetMap}, ' +
+							'Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> ' +
+							'hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
+					}
+				},
+				BZH: {
+					url: 'https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png',
+					options: {
+						attribution: '{attribution.OpenStreetMap}, Tiles courtesy of <a href="http://www.openstreetmap.bzh/" target="_blank">Breton OpenStreetMap Team</a>',
+						bounds: [[46.2, -5.5], [50, 0.7]]
+					}
+				}
+			}
+		},
+		OpenSeaMap: {
+			url: 'https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png',
+			options: {
+				attribution: 'Map data: &copy; <a href="http://www.openseamap.org">OpenSeaMap</a> contributors'
+			}
+		},
+		OpenPtMap: {
+			url: 'http://openptmap.org/tiles/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 17,
+				attribution: 'Map data: &copy; <a href="http://www.openptmap.org">OpenPtMap</a> contributors'
+			}
+		},
+		OpenTopoMap: {
+			url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 17,
+				attribution: 'Map data: {attribution.OpenStreetMap}, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+			}
+		},
+		OpenRailwayMap: {
+			url: 'https://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 19,
+				attribution: 'Map data: {attribution.OpenStreetMap} | Map style: &copy; <a href="https://www.OpenRailwayMap.org">OpenRailwayMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+			}
+		},
+		OpenFireMap: {
+			url: 'http://openfiremap.org/hytiles/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 19,
+				attribution: 'Map data: {attribution.OpenStreetMap} | Map style: &copy; <a href="http://www.openfiremap.org">OpenFireMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+			}
+		},
+		SafeCast: {
+			url: 'https://s3.amazonaws.com/te512.safecast.org/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 16,
+				attribution: 'Map data: {attribution.OpenStreetMap} | Map style: &copy; <a href="https://blog.safecast.org/about/">SafeCast</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+			}
+		},
+		Thunderforest: {
+			url: 'https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}',
+			options: {
+				attribution:
+					'&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, {attribution.OpenStreetMap}',
+				variant: 'cycle',
+				apikey: '<insert your api key here>',
+				maxZoom: 22
+			},
+			variants: {
+				OpenCycleMap: 'cycle',
+				Transport: {
+					options: {
+						variant: 'transport'
+					}
+				},
+				TransportDark: {
+					options: {
+						variant: 'transport-dark'
+					}
+				},
+				SpinalMap: {
+					options: {
+						variant: 'spinal-map'
+					}
+				},
+				Landscape: 'landscape',
+				Outdoors: 'outdoors',
+				Pioneer: 'pioneer'
+			}
+		},
+		OpenMapSurfer: {
+			url: 'https://maps.heigit.org/openmapsurfer/tiles/{variant}/webmercator/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 19,
+				variant: 'roads',
+				attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> | Map data '
+			},
+			variants: {
+				Roads: {
+					options: {
+						variant: 'roads',
+						attribution: '{attribution.OpenMapSurfer}{attribution.OpenStreetMap}'
+					}
+				},
+				Hybrid: {
+					options: {
+						variant: 'hybrid',
+						attribution: '{attribution.OpenMapSurfer}{attribution.OpenStreetMap}'
+					}
+				},
+				AdminBounds: {
+					options: {
+						variant: 'adminb',
+						maxZoom: 18,
+						attribution: '{attribution.OpenMapSurfer}{attribution.OpenStreetMap}'
+					}
+				},
+				ContourLines: {
+					options: {
+						variant: 'asterc',
+						maxZoom: 18,
+						minZoom: 13,
+						attribution: '{attribution.OpenMapSurfer} <a href="https://lpdaac.usgs.gov/products/aster_policies">ASTER GDEM</a>'
+					}
+				},
+				Hillshade: {
+					options: {
+						variant: 'asterh',
+						maxZoom: 18,
+						attribution: '{attribution.OpenMapSurfer} <a href="https://lpdaac.usgs.gov/products/aster_policies">ASTER GDEM</a>, <a href="http://srtm.csi.cgiar.org/">SRTM</a>'
+					}
+				},
+				ElementsAtRisk: {
+					options: {
+						variant: 'elements_at_risk',
+						attribution: '{attribution.OpenMapSurfer}{attribution.OpenStreetMap}'
+					}
+				}
+			}
+		},
+		Hydda: {
+			url: 'https://{s}.tile.openstreetmap.se/hydda/{variant}/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 18,
+				variant: 'full',
+				attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data {attribution.OpenStreetMap}'
+			},
+			variants: {
+				Full: 'full',
+				Base: 'base',
+				RoadsAndLabels: 'roads_and_labels'
+			}
+		},
+		MapBox: {
+			url: 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}{r}.png?access_token={accessToken}',
+			options: {
+				attribution:
+					'<a href="https://www.mapbox.com/about/maps/" target="_blank">&copy; Mapbox</a> ' +
+					'{attribution.OpenStreetMap} ' +
+					'<a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>',
+				subdomains: 'abcd',
+				id: 'mapbox.streets',
+				accessToken: '<insert your access token here>',
+			}
+		},
+		Stamen: {
+			url: 'https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}',
+			options: {
+				attribution:
+					'Map tiles by <a href="http://stamen.com">Stamen Design</a>, ' +
+					'<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; ' +
+					'Map data {attribution.OpenStreetMap}',
+				subdomains: 'abcd',
+				minZoom: 0,
+				maxZoom: 20,
+				variant: 'toner',
+				ext: 'png'
+			},
+			variants: {
+				Toner: 'toner',
+				TonerBackground: 'toner-background',
+				TonerHybrid: 'toner-hybrid',
+				TonerLines: 'toner-lines',
+				TonerLabels: 'toner-labels',
+				TonerLite: 'toner-lite',
+				Watercolor: {
+					url: 'https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}',
+					options: {
+						variant: 'watercolor',
+						ext: 'jpg',
+						minZoom: 1,
+						maxZoom: 16
+					}
+				},
+				Terrain: {
+					options: {
+						variant: 'terrain',
+						minZoom: 0,
+						maxZoom: 18
+					}
+				},
+				TerrainBackground: {
+					options: {
+						variant: 'terrain-background',
+						minZoom: 0,
+						maxZoom: 18
+					}
+				},
+				TopOSMRelief: {
+					url: 'https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}',
+					options: {
+						variant: 'toposm-color-relief',
+						ext: 'jpg',
+						bounds: [[22, -132], [51, -56]]
+					}
+				},
+				TopOSMFeatures: {
+					options: {
+						variant: 'toposm-features',
+						bounds: [[22, -132], [51, -56]],
+						opacity: 0.9
+					}
+				}
+			}
+		},
+		Esri: {
+			url: 'https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}',
+			options: {
+				variant: 'World_Street_Map',
+				attribution: 'Tiles &copy; Esri'
+			},
+			variants: {
+				WorldStreetMap: {
+					options: {
+						attribution:
+							'{attribution.Esri} &mdash; ' +
+							'Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+					}
+				},
+				DeLorme: {
+					options: {
+						variant: 'Specialty/DeLorme_World_Base_Map',
+						minZoom: 1,
+						maxZoom: 11,
+						attribution: '{attribution.Esri} &mdash; Copyright: &copy;2012 DeLorme'
+					}
+				},
+				WorldTopoMap: {
+					options: {
+						variant: 'World_Topo_Map',
+						attribution:
+							'{attribution.Esri} &mdash; ' +
+							'Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+					}
+				},
+				WorldImagery: {
+					options: {
+						variant: 'World_Imagery',
+						attribution:
+							'{attribution.Esri} &mdash; ' +
+							'Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+					}
+				},
+				WorldTerrain: {
+					options: {
+						variant: 'World_Terrain_Base',
+						maxZoom: 13,
+						attribution:
+							'{attribution.Esri} &mdash; ' +
+							'Source: USGS, Esri, TANA, DeLorme, and NPS'
+					}
+				},
+				WorldShadedRelief: {
+					options: {
+						variant: 'World_Shaded_Relief',
+						maxZoom: 13,
+						attribution: '{attribution.Esri} &mdash; Source: Esri'
+					}
+				},
+				WorldPhysical: {
+					options: {
+						variant: 'World_Physical_Map',
+						maxZoom: 8,
+						attribution: '{attribution.Esri} &mdash; Source: US National Park Service'
+					}
+				},
+				OceanBasemap: {
+					options: {
+						variant: 'Ocean_Basemap',
+						maxZoom: 13,
+						attribution: '{attribution.Esri} &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri'
+					}
+				},
+				NatGeoWorldMap: {
+					options: {
+						variant: 'NatGeo_World_Map',
+						maxZoom: 16,
+						attribution: '{attribution.Esri} &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC'
+					}
+				},
+				WorldGrayCanvas: {
+					options: {
+						variant: 'Canvas/World_Light_Gray_Base',
+						maxZoom: 16,
+						attribution: '{attribution.Esri} &mdash; Esri, DeLorme, NAVTEQ'
+					}
+				}
+			}
+		},
+		OpenWeatherMap: {
+			url: 'http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}',
+			options: {
+				maxZoom: 19,
+				attribution: 'Map data &copy; <a href="http://openweathermap.org">OpenWeatherMap</a>',
+				apiKey:'<insert your api key here>',
+				opacity: 0.5
+			},
+			variants: {
+				Clouds: 'clouds',
+				CloudsClassic: 'clouds_cls',
+				Precipitation: 'precipitation',
+				PrecipitationClassic: 'precipitation_cls',
+				Rain: 'rain',
+				RainClassic: 'rain_cls',
+				Pressure: 'pressure',
+				PressureContour: 'pressure_cntr',
+				Wind: 'wind',
+				Temperature: 'temp',
+				Snow: 'snow'
+			}
+		},
+		HERE: {
+			/*
+			 * HERE maps, formerly Nokia maps.
+			 * These basemaps are free, but you need an API key. Please sign up at
+			 * https://developer.here.com/plans
+			 */
+			url:
+				'https://{s}.{base}.maps.api.here.com/maptile/2.1/' +
+				'{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?' +
+				'app_id={app_id}&app_code={app_code}&lg={language}',
+			options: {
+				attribution:
+					'Map &copy; 1987-' + new Date().getFullYear() + ' <a href="http://developer.here.com">HERE</a>',
+				subdomains: '1234',
+				mapID: 'newest',
+				'app_id': '<insert your app_id here>',
+				'app_code': '<insert your app_code here>',
+				base: 'base',
+				variant: 'normal.day',
+				maxZoom: 20,
+				type: 'maptile',
+				language: 'eng',
+				format: 'png8',
+				size: '256'
+			},
+			variants: {
+				normalDay: 'normal.day',
+				normalDayCustom: 'normal.day.custom',
+				normalDayGrey: 'normal.day.grey',
+				normalDayMobile: 'normal.day.mobile',
+				normalDayGreyMobile: 'normal.day.grey.mobile',
+				normalDayTransit: 'normal.day.transit',
+				normalDayTransitMobile: 'normal.day.transit.mobile',
+				normalNight: 'normal.night',
+				normalNightMobile: 'normal.night.mobile',
+				normalNightGrey: 'normal.night.grey',
+				normalNightGreyMobile: 'normal.night.grey.mobile',
+				normalNightTransit: 'normal.night.transit',
+				normalNightTransitMobile: 'normal.night.transit.mobile',
+				reducedDay: 'reduced.day',
+				reducedNight: 'reduced.night',
+				basicMap: {
+					options: {
+						type: 'basetile'
+					}
+				},
+				mapLabels: {
+					options: {
+						type: 'labeltile',
+						format: 'png'
+					}
+				},
+				trafficFlow: {
+					options: {
+						base: 'traffic',
+						type: 'flowtile'
+					}
+				},
+				carnavDayGrey: 'carnav.day.grey',
+				hybridDay: {
+					options: {
+						base: 'aerial',
+						variant: 'hybrid.day'
+					}
+				},
+				hybridDayMobile: {
+					options: {
+						base: 'aerial',
+						variant: 'hybrid.day.mobile'
+					}
+				},
+				hybridDayTransit: {
+					options: {
+						base: 'aerial',
+						variant: 'hybrid.day.transit'
+					}
+				},
+				hybridDayGrey: {
+					options: {
+						base: 'aerial',
+						variant: 'hybrid.grey.day'
+					}
+				},
+				pedestrianDay: 'pedestrian.day',
+				pedestrianNight: 'pedestrian.night',
+				satelliteDay: {
+					options: {
+						base: 'aerial',
+						variant: 'satellite.day'
+					}
+				},
+				terrainDay: {
+					options: {
+						base: 'aerial',
+						variant: 'terrain.day'
+					}
+				},
+				terrainDayMobile: {
+					options: {
+						base: 'aerial',
+						variant: 'terrain.day.mobile'
+					}
+				}
+			}
+		},
+		FreeMapSK: {
+			url: 'http://t{s}.freemap.sk/T/{z}/{x}/{y}.jpeg',
+			options: {
+				minZoom: 8,
+				maxZoom: 16,
+				subdomains: '1234',
+				bounds: [[47.204642, 15.996093], [49.830896, 22.576904]],
+				attribution:
+					'{attribution.OpenStreetMap}, vizualization CC-By-SA 2.0 <a href="http://freemap.sk">Freemap.sk</a>'
+			}
+		},
+		MtbMap: {
+			url: 'http://tile.mtbmap.cz/mtbmap_tiles/{z}/{x}/{y}.png',
+			options: {
+				attribution:
+					'{attribution.OpenStreetMap} &amp; USGS'
+			}
+		},
+		CartoDB: {
+			url: 'https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png',
+			options: {
+				attribution: '{attribution.OpenStreetMap} &copy; <a href="https://carto.com/attributions">CARTO</a>',
+				subdomains: 'abcd',
+				maxZoom: 19,
+				variant: 'light_all'
+			},
+			variants: {
+				Positron: 'light_all',
+				PositronNoLabels: 'light_nolabels',
+				PositronOnlyLabels: 'light_only_labels',
+				DarkMatter: 'dark_all',
+				DarkMatterNoLabels: 'dark_nolabels',
+				DarkMatterOnlyLabels: 'dark_only_labels',
+				Voyager: 'rastertiles/voyager',
+				VoyagerNoLabels: 'rastertiles/voyager_nolabels',
+				VoyagerOnlyLabels: 'rastertiles/voyager_only_labels',
+				VoyagerLabelsUnder: 'rastertiles/voyager_labels_under'
+			}
+		},
+		HikeBike: {
+			url: 'https://tiles.wmflabs.org/{variant}/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 19,
+				attribution: '{attribution.OpenStreetMap}',
+				variant: 'hikebike'
+			},
+			variants: {
+				HikeBike: {},
+				HillShading: {
+					options: {
+						maxZoom: 15,
+						variant: 'hillshading'
+					}
+				}
+			}
+		},
+		BasemapAT: {
+			url: 'https://maps{s}.wien.gv.at/basemap/{variant}/normal/google3857/{z}/{y}/{x}.{format}',
+			options: {
+				maxZoom: 19,
+				attribution: 'Datenquelle: <a href="https://www.basemap.at">basemap.at</a>',
+				subdomains: ['', '1', '2', '3', '4'],
+				format: 'png',
+				bounds: [[46.358770, 8.782379], [49.037872, 17.189532]],
+				variant: 'geolandbasemap'
+			},
+			variants: {
+				basemap: {
+					options: {
+						maxZoom: 20, // currently only in Vienna
+						variant: 'geolandbasemap'
+					}
+				},
+				grau: 'bmapgrau',
+				overlay: 'bmapoverlay',
+				highdpi: {
+					options: {
+						variant: 'bmaphidpi',
+						format: 'jpeg'
+					}
+				},
+				orthofoto: {
+					options: {
+						maxZoom: 20, // currently only in Vienna
+						variant: 'bmaporthofoto30cm',
+						format: 'jpeg'
+					}
+				}
+			}
+		},
+		nlmaps: {
+			url: 'https://geodata.nationaalgeoregister.nl/tiles/service/wmts/{variant}/EPSG:3857/{z}/{x}/{y}.png',
+			options: {
+				minZoom: 6,
+				maxZoom: 19,
+				bounds: [[50.5, 3.25], [54, 7.6]],
+				attribution: 'Kaartgegevens &copy; <a href="kadaster.nl">Kadaster</a>'
+			},
+			variants: {
+				'standaard': 'brtachtergrondkaart',
+				'pastel': 'brtachtergrondkaartpastel',
+				'grijs': 'brtachtergrondkaartgrijs',
+				'luchtfoto': {
+					'url': 'https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wmts/1.0.0/2016_ortho25/EPSG:3857/{z}/{x}/{y}.png',
+				}
+			}
+		},
+		NASAGIBS: {
+			url: 'https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{maxZoom}/{z}/{y}/{x}.{format}',
+			options: {
+				attribution:
+					'Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System ' +
+					'(<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.',
+				bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
+				minZoom: 1,
+				maxZoom: 9,
+				format: 'jpg',
+				time: '',
+				tilematrixset: 'GoogleMapsCompatible_Level'
+			},
+			variants: {
+				ModisTerraTrueColorCR: 'MODIS_Terra_CorrectedReflectance_TrueColor',
+				ModisTerraBands367CR: 'MODIS_Terra_CorrectedReflectance_Bands367',
+				ViirsEarthAtNight2012: {
+					options: {
+						variant: 'VIIRS_CityLights_2012',
+						maxZoom: 8
+					}
+				},
+				ModisTerraLSTDay: {
+					options: {
+						variant: 'MODIS_Terra_Land_Surface_Temp_Day',
+						format: 'png',
+						maxZoom: 7,
+						opacity: 0.75
+					}
+				},
+				ModisTerraSnowCover: {
+					options: {
+						variant: 'MODIS_Terra_Snow_Cover',
+						format: 'png',
+						maxZoom: 8,
+						opacity: 0.75
+					}
+				},
+				ModisTerraAOD: {
+					options: {
+						variant: 'MODIS_Terra_Aerosol',
+						format: 'png',
+						maxZoom: 6,
+						opacity: 0.75
+					}
+				},
+				ModisTerraChlorophyll: {
+					options: {
+						variant: 'MODIS_Terra_Chlorophyll_A',
+						format: 'png',
+						maxZoom: 7,
+						opacity: 0.75
+					}
+				}
+			}
+		},
+		NLS: {
+			// NLS maps are copyright National library of Scotland.
+			// http://maps.nls.uk/projects/api/index.html
+			// Please contact NLS for anything other than non-commercial low volume usage
+			//
+			// Map sources: Ordnance Survey 1:1m to 1:63K, 1920s-1940s
+			//   z0-9  - 1:1m
+			//  z10-11 - quarter inch (1:253440)
+			//  z12-18 - one inch (1:63360)
+			url: 'https://nls-{s}.tileserver.com/nls/{z}/{x}/{y}.jpg',
+			options: {
+				attribution: '<a href="http://geo.nls.uk/maps/">National Library of Scotland Historic Maps</a>',
+				bounds: [[49.6, -12], [61.7, 3]],
+				minZoom: 1,
+				maxZoom: 18,
+				subdomains: '0123',
+			}
+		},
+		JusticeMap: {
+			// Justice Map (http://www.justicemap.org/)
+			// Visualize race and income data for your community, county and country.
+			// Includes tools for data journalists, bloggers and community activists.
+			url: 'http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png',
+			options: {
+				attribution: '<a href="http://www.justicemap.org/terms.php">Justice Map</a>',
+				// one of 'county', 'tract', 'block'
+				size: 'county',
+				// Bounds for USA, including Alaska and Hawaii
+				bounds: [[14, -180], [72, -56]]
+			},
+			variants: {
+				income: 'income',
+				americanIndian: 'indian',
+				asian: 'asian',
+				black: 'black',
+				hispanic: 'hispanic',
+				multi: 'multi',
+				nonWhite: 'nonwhite',
+				white: 'white',
+				plurality: 'plural'
+			}
+		},
+		Wikimedia: {
+			url: 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png',
+			options: {
+				attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
+				minZoom: 1,
+				maxZoom: 19
+			}
+		},
+		GeoportailFrance: {
+			url: 'https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}',
+			options: {
+				attribution: '<a target="_blank" href="https://www.geoportail.gouv.fr/">Geoportail France</a>',
+				bounds: [[-75, -180], [81, 180]],
+				minZoom: 2,
+				maxZoom: 18,
+				// Get your own geoportail apikey here : http://professionnels.ign.fr/ign/contrats/
+				// NB : 'choisirgeoportail' is a demonstration key that comes with no guarantee
+				apikey: 'choisirgeoportail',
+				format: 'image/jpeg',
+				style : 'normal',
+				variant: 'GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD'
+			},
+			variants: {
+				parcels: {
+					options : {
+						variant: 'CADASTRALPARCELS.PARCELS',
+						maxZoom: 20,
+						style : 'bdparcellaire',
+						format: 'image/png'
+					}
+				},
+				ignMaps: 'GEOGRAPHICALGRIDSYSTEMS.MAPS',
+				maps: 'GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD',
+				orthos: {
+					options: {
+						maxZoom: 19,
+						variant: 'ORTHOIMAGERY.ORTHOPHOTOS'
+					}
+				}
+			}
+		},
+		OneMapSG: {
+			url: 'https://maps-{s}.onemap.sg/v3/{variant}/{z}/{x}/{y}.png',
+			options: {
+				variant: 'Default',
+				minZoom: 11,
+				maxZoom: 18,
+				bounds: [[1.56073, 104.11475], [1.16, 103.502]],
+				attribution: '<img src="https://docs.onemap.sg/maps/images/oneMap64-01.png" style="height:20px;width:20px;"/> New OneMap | Map data &copy; contributors, <a href="http://SLA.gov.sg">Singapore Land Authority</a>'
+			},
+			variants: {
+				Default: 'Default',
+				Night: 'Night',
+				Original: 'Original',
+				Grey: 'Grey',
+				LandLot: 'LandLot'
+			}
+		}
+	};
+
+	L.tileLayer.provider = function (provider, options) {
+		return new L.TileLayer.Provider(provider, options);
+	};
+
+	return L;
+}));
+`;
+            if(!document.getElementById(provEl.id)){
+                 document.head.appendChild(provEl);        
+            }
+            _createMap();
+            }
+        esriEl.src = esriLeafletCdn + "esri-leaflet.js";
+        addToHeadIfNotLoaded(esriEl);
+        };
+    leafletJsEl.src = leafletCdn + "leaflet.js";
+    addToHeadIfNotLoaded(leafletJsEl);
+})();
+</script> <h2 id="day-1---lemosho-gate-to-mti-mkubwa">Day 1 - Lemosho Gate to Mti Mkubwa</h2> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/1/01-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/1/01-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/1/01-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/1/01.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/1/02-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/1/02-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/1/02-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/1/02.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/1/03-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/1/03-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/1/03-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/1/03.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <h2 id="day-2---mti-mkubwa-to-shira-i-camp">Day 2 - Mti Mkubwa to Shira I Camp</h2> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/2/01-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/2/01-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/2/01-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/2/01.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/2/02-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/2/02-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/2/02-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/2/02.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/2/03-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/2/03-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/2/03-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/2/03.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/2/04-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/2/04-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/2/04-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/2/04.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <h2 id="day-3---shira-i-camp-to-moir-hut">Day 3 - Shira I Camp to Moir Hut</h2> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/3/01-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/3/01-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/3/01-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/3/01.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/3/02-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/3/02-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/3/02-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/3/02.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/3/03-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/3/03-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/3/03-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/3/03.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/3/04-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/3/04-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/3/04-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/3/04.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <h2 id="day-4---moir-hut-to-buffalo-camp">Day 4 - Moir Hut to Buffalo Camp</h2> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/4/01-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/4/01-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/4/01-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/4/01.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/4/02-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/4/02-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/4/02-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/4/02.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/4/03-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/4/03-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/4/03-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/4/03.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/4/04-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/4/04-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/4/04-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/4/04.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/4/05-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/4/05-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/4/05-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/4/05.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/4/06-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/4/06-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/4/06-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/4/06.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/4/07-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/4/07-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/4/07-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/4/07.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/4/08-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/4/08-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/4/08-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/4/08.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/4/09-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/4/09-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/4/09-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/4/09.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <h2 id="day-5---buffalo-camp-to-third-cave">Day 5 - Buffalo Camp to Third Cave</h2> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/5/01-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/5/01-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/5/01-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/5/01.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/5/02-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/5/02-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/5/02-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/5/02.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <h2 id="day-6---third-cave-to-kibo-hut">Day 6 - Third Cave to Kibo Hut</h2> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/6/01-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/6/01-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/6/01-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/6/01.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/6/02-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/6/02-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/6/02-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/6/02.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/6/03-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/6/03-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/6/03-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/6/03.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/6/04-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/6/04-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/6/04-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/6/04.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <h2 id="day-7---kibo-hut-to-uhuru-peak-to-barafu-camp">Day 7 - Kibo Hut to Uhuru Peak to Barafu Camp</h2> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/01-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/01-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/01-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/01.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/02-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/02-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/02-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/02.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/03-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/03-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/03-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/03.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/04-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/04-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/04-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/04.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/05-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/05-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/05-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/05.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/06-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/06-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/06-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/06.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/07-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/07-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/07-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/07.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/08-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/08-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/08-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/08.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/09-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/09-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/09-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/09.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/10-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/10-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/10-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/10.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/11-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/11-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/11-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/11.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/12-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/12-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/12-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/12.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/13-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/13-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/13-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/13.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/14-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/14-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/14-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/14.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/15-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/15-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/15-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/15.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/16-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/16-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/16-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/16.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/7/17-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/7/17-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/7/17-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/7/17.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <h2 id="day-8---barafu-camp-to-mweka-camp">Day 8 - Barafu Camp to Mweka Camp</h2> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/8/00-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/8/00-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/8/00-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/8/00.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/8/01-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/8/01-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/8/01-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/8/01.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/8/02-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/8/02-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/8/02-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/8/02.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/8/03-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/8/03-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/8/03-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/8/03.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/8/04-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/8/04-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/8/04-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/8/04.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/8/05-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/8/05-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/8/05-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/8/05.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/kilimanjaro/northern_circuit/8/06-800.webp 800w,/assets/img/kilimanjaro/northern_circuit/8/06-1400.webp 1400w,/assets/img/kilimanjaro/northern_circuit/8/06-2800.webp 2800w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/kilimanjaro/northern_circuit/8/06.jpeg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> <h2 id="day-9---mweka-camp-to-mweka-gate">Day 9 - Mweka Camp to Mweka Gate</h2> <p>Phone died, so unfortunately no photos!</p> </div> </article> <div id="giscus_thread" style="max-width: 930px; margin: 0 auto;"> <br> <script>
+      let giscusTheme = determineComputedTheme();
+      let giscusAttributes = {
+        src: 'https://giscus.app/client.js',
+        'data-repo': 'y-src/y-src.github.io',
+        'data-repo-id': '',
+        'data-category': 'Announcements',
+        'data-category-id': '',
+        'data-mapping': 'title',
+        'data-strict': '1',
+        'data-reactions-enabled': '1',
+        'data-emit-metadata': '0',
+        'data-input-position': 'bottom',
+        'data-theme': giscusTheme,
+        'data-lang': 'en',
+        crossorigin: 'anonymous',
+        async: '',
+      };
+
+      let giscusScript = document.createElement('script');
+      Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+      document.getElementById('giscus_thread').appendChild(giscusScript);
+    </script> <noscript>Please enable JavaScript to view the <a href="http://giscus.app/?ref_noscript" rel="external nofollow noopener" target="_blank">comments powered by giscus.</a> </noscript> </div> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Rahul Yadav. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script> <script defer src="/assets/js/leaflet-setup.js?b6313931e203b924523e2d8b75fe8874" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script defer src="/assets/js/bootstrap-toc.min.js?c82ff4de8b0955d6ff14f5b05eed7eb6"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>
